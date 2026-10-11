@@ -1,14 +1,12 @@
 # Build the submission PDF
 
-The local preparation directory contains the official ReScience template
-and a portable Tectonic 0.17.0 executable. The research's original directory
-is read as input and is not edited.
+The repository includes the ReScience template and editable article sources. Install PyYAML and an official Tectonic 0.17.0 executable or XeLaTeX.
 
 ```text
-python publication_figures.py --results PATH/TO/RESEARCH --dependencies PATH/TO/SCIENTIFIC/PACKAGES
-python prepare_submission.py --manuscript PATH/TO/paper.md
+python publication_figures.py --results .
+python prepare_submission.py --manuscript paper.md
 cd latex
-../_tools/tectonic/tectonic.exe -X compile --keep-intermediates --keep-logs article.tex
+tectonic -X compile --keep-intermediates --keep-logs article.tex
 ```
 
 On Windows, use backslashes in the executable path if required by the shell.
