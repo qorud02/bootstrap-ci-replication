@@ -1,0 +1,11 @@
+{"event": "progress", "case": "archive_rebuild", "population": "exponential", "n": 10, "completed": 20, "outer": 1500, "elapsed_seconds": 0.646}
+{"event": "progress", "case": "archive_rebuild", "population": "exponential", "n": 10, "completed": 1020, "outer": 1500, "elapsed_seconds": 35.622}
+{"event": "progress", "case": "archive_rebuild", "population": "exponential", "n": 10, "completed": 1500, "outer": 1500, "elapsed_seconds": 49.373}
+{"event": "progress", "case": "archive_rebuild", "population": "exponential", "n": 40, "completed": 5, "outer": 1500, "elapsed_seconds": 0.288}
+{"event": "progress", "case": "archive_rebuild", "population": "exponential", "n": 40, "completed": 255, "outer": 1500, "elapsed_seconds": 15.861}
+{"event": "progress", "case": "archive_rebuild", "population": "exponential", "n": 40, "completed": 505, "outer": 1500, "elapsed_seconds": 32.499}
+{"event": "progress", "case": "archive_rebuild", "population": "exponential", "n": 40, "completed": 755, "outer": 1500, "elapsed_seconds": 49.259}
+{"event": "progress", "case": "archive_rebuild", "population": "exponential", "n": 40, "completed": 1005, "outer": 1500, "elapsed_seconds": 70.713}
+{"event": "progress", "case": "archive_rebuild", "population": "exponential", "n": 40, "completed": 1255, "outer": 1500, "elapsed_seconds": 87.339}
+{"event": "progress", "case": "archive_rebuild", "population": "exponential", "n": 40, "completed": 1500, "outer": 1500, "elapsed_seconds": 105.606}
+{"event": "archive_complete", "checked_rows": 84, "archive_arrays": 10, "cases": [{"population": "exponential", "n": 10, "outer": 1500, "bootstrap_counts": [1999, 9999], "seed": 20462011, "label": "archive_rebuild", "elapsed_seconds": 49.374685499991756}, {"population": "exponential", "n": 40, "outer": 1500, "bootstrap_counts": [1999, 9999], "seed": 20465011, "label": "archive_rebuild", "elapsed_seconds": 105.61322169998311}], "elapsed_seconds": 156.50420550000854}

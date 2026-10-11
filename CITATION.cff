@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this study, please cite this release."
+title: "An independent replication of bootstrap confidence-interval calibration for small samples"
+authors:
+  - family-names: Bae
+    given-names: Kyunghan
+version: 1.0.0
+date-released: 2026-10-11
+url: "https://github.com/qorud02/bootstrap-ci-replication"
+license: MIT
+type: software
+preferred-citation:
+  type: article
+  title: "An independent replication of bootstrap confidence-interval calibration for small samples"
+  authors:
+    - family-names: Bae
+      given-names: Kyunghan
+  year: 2026
+  doi: "10.5281/zenodo.23298767"

@@ -1,0 +1,59 @@
+{
+  "anchor_cells_passed": 20,
+  "rankings": {
+    "10": [
+      "bootT",
+      "tSkew",
+      "expanded",
+      "t",
+      "tBoot",
+      "percentile",
+      "reverse"
+    ],
+    "20": [
+      "bootT",
+      "tSkew",
+      "expanded",
+      "percentile",
+      "t",
+      "tBoot",
+      "reverse"
+    ],
+    "40": [
+      "bootT",
+      "tSkew",
+      "expanded",
+      "percentile",
+      "t",
+      "tBoot",
+      "reverse"
+    ]
+  },
+  "largest_finite_B_change": {
+    "population": "exponential",
+    "n": "10",
+    "comparison": "expanded_B9999_minus_B1999",
+    "side": "right",
+    "mean_difference": "-0.0008128424864352897",
+    "paired_mcse": "0.00014223786790728483",
+    "ci95_low": "-0.0010916287075335678",
+    "ci95_high": "-0.0005340562653370115"
+  },
+  "degenerate_bootstrap_resamples": 0,
+  "elapsed_seconds": 731.5965907000063,
+  "figure_files": [
+    "coverage_replication.png",
+    "finite_B_sensitivity.png"
+  ],
+  "exponential_n10_coverage": {
+    "Student_t": 0.9000769751284257,
+    "bootstrap_t": 0.9406643662430302
+  },
+  "source_subset": "2015 journal Figure10 normal/exponential n10/20/40 + 2014 extended Table5",
+  "independent_original_samples": 33000,
+  "software": {
+    "numpy": "2.3.5",
+    "scipy": "1.15.3",
+    "matplotlib": "3.10.8"
+  }
+}

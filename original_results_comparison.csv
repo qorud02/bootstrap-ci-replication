@@ -1,0 +1,16 @@
+source,population,n,method,side,target_type,source_target,our_estimate,mc_ci_low,mc_ci_high,status
+Exact normal Student t probability,normal,10,t,left,exact_probability,0.025,0.024456684651219786,0.023663004309485376,0.025250364992954195,target_in_95_mc_interval
+Exact normal Student t probability,normal,10,t,right,exact_probability,0.025,0.024456684651219786,0.023663004309485376,0.025250364992954195,target_in_95_mc_interval
+Nominal one-sided calibration target,normal,10,bootT,left,nominal_probability,0.025,0.02519071698561924,0.0242856577551983,0.026095776216040183,target_in_95_mc_interval
+Nominal one-sided calibration target,normal,10,bootT,right,nominal_probability,0.025,0.02500302034117657,0.024100420939537476,0.025905619742815664,target_in_95_mc_interval
+Journal Fig10 and extended Fig21 qualitative conclusion,exponential,10,bootT,both,qualitative_rank,bootstrap t best overall coverage accuracy,1,,,point_estimate_agrees
+Exact normal Student t probability,normal,20,t,left,exact_probability,0.025,0.02530673783042208,0.02477118963566439,0.02584228602517977,target_in_95_mc_interval
+Exact normal Student t probability,normal,20,t,right,exact_probability,0.025,0.025306737830422078,0.024771189635664388,0.025842286025179767,target_in_95_mc_interval
+Nominal one-sided calibration target,normal,20,bootT,left,nominal_probability,0.025,0.025841013702549258,0.02524109137131841,0.026440936033780105,target_outside_95_mc_interval
+Nominal one-sided calibration target,normal,20,bootT,right,nominal_probability,0.025,0.025749934156336998,0.025144796646057923,0.026355071666616072,target_outside_95_mc_interval
+Journal Fig10 and extended Fig21 qualitative conclusion,exponential,20,bootT,both,qualitative_rank,bootstrap t best overall coverage accuracy,1,,,point_estimate_agrees
+Exact normal Student t probability,normal,40,t,left,exact_probability,0.025,0.025245951048564443,0.02486902225195599,0.025622879845172898,target_in_95_mc_interval
+Exact normal Student t probability,normal,40,t,right,exact_probability,0.025,0.025245951048564443,0.02486902225195599,0.025622879845172898,target_in_95_mc_interval
+Nominal one-sided calibration target,normal,40,bootT,left,nominal_probability,0.025,0.025841752670014977,0.025426740834699178,0.026256764505330776,target_outside_95_mc_interval
+Nominal one-sided calibration target,normal,40,bootT,right,nominal_probability,0.025,0.025593592671457617,0.025178931975732576,0.026008253367182658,target_outside_95_mc_interval
+Journal Fig10 and extended Fig21 qualitative conclusion,exponential,40,bootT,both,qualitative_rank,bootstrap t best overall coverage accuracy,1,,,point_estimate_agrees

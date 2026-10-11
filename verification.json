@@ -1,0 +1,60 @@
+{
+  "passed": 8,
+  "checks": [
+    {
+      "name": "20 original Table5 numerical cells",
+      "passed": true,
+      "detail": 20
+    },
+    {
+      "name": "all 7 interval translation equivariance",
+      "passed": true,
+      "detail": 3.552713678800501e-15
+    },
+    {
+      "name": "all 7 interval positive scale equivariance",
+      "passed": true,
+      "detail": 2.6645352591003757e-15
+    },
+    {
+      "name": "normal conditioned Student t exact size n=10",
+      "passed": true,
+      "detail": {
+        "calculated": 0.024999999997716498,
+        "quadrature_error": 1.3256752050501135e-11
+      }
+    },
+    {
+      "name": "normal conditioned Student t exact size n=20",
+      "passed": true,
+      "detail": {
+        "calculated": 0.025000000000002312,
+        "quadrature_error": 2.7989240344510664e-10
+      }
+    },
+    {
+      "name": "normal conditioned Student t exact size n=40",
+      "passed": true,
+      "detail": {
+        "calculated": 0.025000000000000133,
+        "quadrature_error": 2.1266479566148633e-11
+      }
+    },
+    {
+      "name": "exponential normalization/conditional tails",
+      "passed": true,
+      "detail": {
+        "left_analytic": 0.031004401409941436,
+        "left_binary": 0.031133333333333332,
+        "right_analytic": 0.18428091582234346,
+        "right_binary": 0.18494,
+        "max_z": 0.931088624601589
+      }
+    },
+    {
+      "name": "undefined studentized resamples trigger explicit failure",
+      "passed": true,
+      "detail": true
+    }
+  ]
+}

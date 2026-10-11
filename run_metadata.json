@@ -1,0 +1,175 @@
+{
+  "arguments": {
+    "outer": 5000,
+    "bootstrap": 1999,
+    "sensitivity_outer": 1500,
+    "sensitivity_bootstrap": 9999,
+    "seed": 20261011
+  },
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26300-SP0",
+  "numpy": "2.3.5",
+  "scipy": "1.15.3",
+  "rng": "PCG64DXSM",
+  "quantile_method": "NumPy linear (Hyndman-Fan type 7)",
+  "anchor_cells_passed": 20,
+  "cases": [
+    {
+      "population": "normal",
+      "n": 10,
+      "outer": 5000,
+      "bootstrap_counts": [
+        1999
+      ],
+      "seed": 20262011,
+      "label": "main",
+      "elapsed_seconds": 93.98522910001338,
+      "diagnostics": {
+        "1999": {
+          "degenerate_bootstrap_resamples": 0,
+          "skew_quadratic_flattened_samples": 0,
+          "total_bootstrap_resamples": 9995000
+        }
+      }
+    },
+    {
+      "population": "normal",
+      "n": 20,
+      "outer": 5000,
+      "bootstrap_counts": [
+        1999
+      ],
+      "seed": 20263011,
+      "label": "main",
+      "elapsed_seconds": 88.76914849999594,
+      "diagnostics": {
+        "1999": {
+          "degenerate_bootstrap_resamples": 0,
+          "skew_quadratic_flattened_samples": 0,
+          "total_bootstrap_resamples": 9995000
+        }
+      }
+    },
+    {
+      "population": "normal",
+      "n": 40,
+      "outer": 5000,
+      "bootstrap_counts": [
+        1999
+      ],
+      "seed": 20265011,
+      "label": "main",
+      "elapsed_seconds": 138.145239400008,
+      "diagnostics": {
+        "1999": {
+          "degenerate_bootstrap_resamples": 0,
+          "skew_quadratic_flattened_samples": 0,
+          "total_bootstrap_resamples": 9995000
+        }
+      }
+    },
+    {
+      "population": "exponential",
+      "n": 10,
+      "outer": 5000,
+      "bootstrap_counts": [
+        1999
+      ],
+      "seed": 20272011,
+      "label": "main",
+      "elapsed_seconds": 32.7329264,
+      "diagnostics": {
+        "1999": {
+          "degenerate_bootstrap_resamples": 0,
+          "skew_quadratic_flattened_samples": 30,
+          "total_bootstrap_resamples": 9995000
+        }
+      }
+    },
+    {
+      "population": "exponential",
+      "n": 20,
+      "outer": 5000,
+      "bootstrap_counts": [
+        1999
+      ],
+      "seed": 20273011,
+      "label": "main",
+      "elapsed_seconds": 65.66988860000856,
+      "diagnostics": {
+        "1999": {
+          "degenerate_bootstrap_resamples": 0,
+          "skew_quadratic_flattened_samples": 9,
+          "total_bootstrap_resamples": 9995000
+        }
+      }
+    },
+    {
+      "population": "exponential",
+      "n": 40,
+      "outer": 5000,
+      "bootstrap_counts": [
+        1999
+      ],
+      "seed": 20275011,
+      "label": "main",
+      "elapsed_seconds": 91.62307599998894,
+      "diagnostics": {
+        "1999": {
+          "degenerate_bootstrap_resamples": 0,
+          "skew_quadratic_flattened_samples": 0,
+          "total_bootstrap_resamples": 9995000
+        }
+      }
+    },
+    {
+      "population": "exponential",
+      "n": 10,
+      "outer": 1500,
+      "bootstrap_counts": [
+        1999,
+        9999
+      ],
+      "seed": 20462011,
+      "label": "finite_B",
+      "elapsed_seconds": 67.0180521000002,
+      "diagnostics": {
+        "1999": {
+          "degenerate_bootstrap_resamples": 0,
+          "skew_quadratic_flattened_samples": 8,
+          "total_bootstrap_resamples": 2998500
+        },
+        "9999": {
+          "degenerate_bootstrap_resamples": 0,
+          "skew_quadratic_flattened_samples": 8,
+          "total_bootstrap_resamples": 14998500
+        }
+      }
+    },
+    {
+      "population": "exponential",
+      "n": 40,
+      "outer": 1500,
+      "bootstrap_counts": [
+        1999,
+        9999
+      ],
+      "seed": 20465011,
+      "label": "finite_B",
+      "elapsed_seconds": 150.45875060002436,
+      "diagnostics": {
+        "1999": {
+          "degenerate_bootstrap_resamples": 0,
+          "skew_quadratic_flattened_samples": 1,
+          "total_bootstrap_resamples": 2998500
+        },
+        "9999": {
+          "degenerate_bootstrap_resamples": 0,
+          "skew_quadratic_flattened_samples": 1,
+          "total_bootstrap_resamples": 14998500
+        }
+      }
+    }
+  ],
+  "elapsed_seconds": 731.5965907000063
+}

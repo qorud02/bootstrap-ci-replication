@@ -1,0 +1,66 @@
+[
+  {
+    "population": "normal",
+    "n": 10,
+    "finite_bounded_disjoint_weights": true,
+    "csv_matches_archive": true
+  },
+  {
+    "population": "normal",
+    "n": 20,
+    "finite_bounded_disjoint_weights": true,
+    "csv_matches_archive": true
+  },
+  {
+    "population": "normal",
+    "n": 40,
+    "finite_bounded_disjoint_weights": true,
+    "csv_matches_archive": true
+  },
+  {
+    "population": "exponential",
+    "n": 10,
+    "finite_bounded_disjoint_weights": true,
+    "csv_matches_archive": true
+  },
+  {
+    "population": "exponential",
+    "n": 20,
+    "finite_bounded_disjoint_weights": true,
+    "csv_matches_archive": true
+  },
+  {
+    "population": "exponential",
+    "n": 40,
+    "finite_bounded_disjoint_weights": true,
+    "csv_matches_archive": true
+  },
+  {
+    "population": "exponential",
+    "n": 10,
+    "bootstrap_resamples": 1999,
+    "finite_bounded_disjoint_weights": true,
+    "csv_matches_archive": true
+  },
+  {
+    "population": "exponential",
+    "n": 10,
+    "bootstrap_resamples": 9999,
+    "finite_bounded_disjoint_weights": true,
+    "csv_matches_archive": true
+  },
+  {
+    "population": "exponential",
+    "n": 40,
+    "bootstrap_resamples": 1999,
+    "finite_bounded_disjoint_weights": true,
+    "csv_matches_archive": true
+  },
+  {
+    "population": "exponential",
+    "n": 40,
+    "bootstrap_resamples": 9999,
+    "finite_bounded_disjoint_weights": true,
+    "csv_matches_archive": true
+  }
+]

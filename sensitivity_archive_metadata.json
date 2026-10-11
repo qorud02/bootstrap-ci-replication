@@ -1,0 +1,32 @@
+{
+  "event": "archive_complete",
+  "checked_rows": 84,
+  "archive_arrays": 10,
+  "cases": [
+    {
+      "population": "exponential",
+      "n": 10,
+      "outer": 1500,
+      "bootstrap_counts": [
+        1999,
+        9999
+      ],
+      "seed": 20462011,
+      "label": "archive_rebuild",
+      "elapsed_seconds": 49.374685499991756
+    },
+    {
+      "population": "exponential",
+      "n": 40,
+      "outer": 1500,
+      "bootstrap_counts": [
+        1999,
+        9999
+      ],
+      "seed": 20465011,
+      "label": "archive_rebuild",
+      "elapsed_seconds": 105.61322169998311
+    }
+  ],
+  "elapsed_seconds": 156.50420550000854
+}
