@@ -1,5 +1,7 @@
 # Bootstrap confidence-interval replication
 
+[한국어로 읽는 연구 결과](PLAIN_LANGUAGE_KO.md)
+
 This project independently implements the interval-calibration experiment
 in Tim Hesterberg's 2014 extended manuscript and related 2015 article. It
 compares seven methods using exactly specified normal and exponential
