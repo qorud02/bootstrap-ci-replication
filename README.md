@@ -62,3 +62,7 @@ source attribution. This package contains no private or participant data.
 ## Journal-format article
 
 `article.pdf` and `metadata.yaml` provide the ReScience C submission format. The editable LaTeX source is in `latex/`; `BUILD.md` describes compilation. The ReScience template and bundled fonts retain their upstream licenses in that directory. Original simulation code remains MIT licensed.
+
+## Journal submission
+
+Submitted to ReScience C: [submission #140](https://github.com/ReScience/submissions/issues/140). The submission links identify a fixed commit of the article, metadata and code. Editorial assignment is pending.
