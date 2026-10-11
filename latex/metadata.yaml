@@ -11,11 +11,11 @@ affiliations:
 keywords: bootstrap, confidence intervals, small samples, Monte Carlo, Python
 code:
 - url: https://github.com/qorud02/bootstrap-ci-replication
-- doi: ''
+- doi: 10.5281/zenodo.23298767
 - swh: ''
 data:
 - url: https://github.com/qorud02/bootstrap-ci-replication
-- doi: ''
+- doi: 10.5281/zenodo.23298767
 replication:
 - cite: 'Hesterberg, T. C. (2015). What Teachers Should Know About the Bootstrap: Resampling in the Undergraduate Statistics Curriculum. The American Statistician, 69(4), 371–386.'
 - bib: hesterberg2015

@@ -9,6 +9,8 @@ affiliations:
   index: 1
 date: 11 October 2026
 bibliography: paper.bib
+code_doi: 10.5281/zenodo.23298767
+data_doi: 10.5281/zenodo.23298767
 ---
 
 # Abstract
@@ -199,6 +201,14 @@ counts are supplied. All main and finite-B conditional weights are archived in
 `conditional_miss_samples.npz`, allowing independent reanalysis. The source
 paper and figures are linked in `SOURCE_TRACE.md`. All observations are
 generated from the stated probability distributions.
+
+# Funding
+
+This research received no external funding.
+
+# Competing interests
+
+The author declares no competing interests.
 
 # References
 

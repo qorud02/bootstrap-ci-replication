@@ -62,7 +62,11 @@
       Correspondence should be addressed to
       \contactNAME~(\href{mailto:\contactEMAIL}{\contactEMAIL})
 
-      \ifdefempty{\codeURL}{}
+      
+% AUTHOR_CONFIRMED_COMPETING_INTERESTS
+The author declares no competing interests.\par
+% END_AUTHOR_CONFIRMED_COMPETING_INTERESTS
+\ifdefempty{\codeURL}{}
       {Code is available at
       \href{\codeURL}{\detokenize\expandafter{\codeURL}}\ifdefempty{\codeDOI}{.}{ -- DOI \doi{\codeDOI}.}\ifdefempty{\codeSWH}{.}{ -- SWH  \href{https://archive.softwareheritage.org/\codeSWH/}{\detokenize\expandafter{\codeSWH}}.}}
 

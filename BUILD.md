@@ -4,7 +4,7 @@ The repository includes the ReScience template and editable article sources. Ins
 
 ```text
 python publication_figures.py --results .
-python prepare_submission.py --manuscript paper.md
+python prepare_submission.py --manuscript paper.md --code-doi 10.5281/zenodo.23298767 --data-doi 10.5281/zenodo.23298767 --competing-interests "The author declares no competing interests." --funding "This research received no external funding." --eligibility-confirmed
 cd latex
 tectonic -X compile --keep-intermediates --keep-logs article.tex
 ```

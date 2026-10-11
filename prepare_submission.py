@@ -24,6 +24,7 @@ parser.add_argument('--data-doi',default='',help='Set only after the archival re
 parser.add_argument('--figures',type=Path,default=ROOT/'figures')
 parser.add_argument('--competing-interests',default=None,help='Only a statement explicitly confirmed by the author')
 parser.add_argument('--funding',default=None,help='Only a statement explicitly confirmed by the author')
+parser.add_argument('--eligibility-confirmed',action='store_true',help='Author has confirmed no disqualifying close collaboration')
 args=parser.parse_args()
 original=args.manuscript.read_text(encoding='utf-8')
 front,body=re.match(r'^---\s*\n(.*?)\n---\s*\n(.*)$',original,re.S).groups()
@@ -178,11 +179,21 @@ header=re.sub(r'(?m)^\s*'+re.escape(sentence)+r'\s*$', '',header)
 marker='% AUTHOR_CONFIRMED_COMPETING_INTERESTS'
 header=re.sub(re.escape(marker)+r'.*?% END_AUTHOR_CONFIRMED_COMPETING_INTERESTS','',header,flags=re.S)
 if args.competing_interests:
-    header=header.replace(r'\ifdefempty{\codeURL}',marker+'\n'+inline(args.competing_interests)+'\n% END_AUTHOR_CONFIRMED_COMPETING_INTERESTS\n'+r'\ifdefempty{\codeURL}',1)
+    header=header.replace(r'\ifdefempty{\codeURL}',marker+'\n'+inline(args.competing_interests)+r'\par'+'\n% END_AUTHOR_CONFIRMED_COMPETING_INTERESTS\n'+r'\ifdefempty{\codeURL}',1)
 headerfile.write_text(header,encoding='utf-8')
 
 front['title']=title
-copy='---\n'+yaml.safe_dump(front,allow_unicode=True,sort_keys=False)+'---\n\n'+body
+submission_body=body
+declarations=[]
+if args.funding:
+    declarations.append('# Funding\n\n'+args.funding+'\n\n')
+if args.competing_interests:
+    declarations.append('# Competing interests\n\n'+args.competing_interests+'\n\n')
+if declarations:
+    submission_body=submission_body.replace('# References\n',''.join(declarations)+'# References\n',1)
+front['code_doi']=args.code_doi
+front['data_doi']=args.data_doi
+copy='---\n'+yaml.safe_dump(front,allow_unicode=True,sort_keys=False)+'---\n\n'+submission_body
 (ROOT/'submission_manuscript.md').write_text(copy,encoding='utf-8')
 issue=f'''**Original article:** Hesterberg (2015), The American Statistician 69(4), 371–386. DOI: 10.1080/00031305.2015.1089789.
 
@@ -202,11 +213,13 @@ validation={
  'official_parser_loaded':True,'contact_author':article.contact.name,'contact_email':article.contact.email,
  'orcid':article.contact.orcid,'metadata_title':article.title,
  'code_url_requires_publication_verification':True,
- 'close_collaborator_eligibility_requires_author_confirmation':True,
+ 'close_collaborator_eligibility_requires_author_confirmation':not args.eligibility_confirmed,
+ 'close_collaborator_eligibility_author_confirmed':args.eligibility_confirmed,
+ 'code_doi':args.code_doi,'data_doi':args.data_doi,
  'competing_interests_confirmed_text':args.competing_interests,
  'funding_confirmed_text':args.funding,
  'original_manuscript_sha256':hashlib.sha256(args.manuscript.read_bytes()).hexdigest(),
- 'template_changes':['BibLaTeX backend biber to bibtex','Add booktabs/longtable/array/graphicx','Remove unconfirmed fixed competing-interests declaration'],
+ 'template_changes':['BibLaTeX backend biber to bibtex','Add booktabs/longtable/array/graphicx','Use only author-confirmed competing-interests wording'],
 }
 (ROOT/'preparation_validation.json').write_text(json.dumps(validation,indent=2),encoding='utf-8')
 print(json.dumps(validation,indent=2))
