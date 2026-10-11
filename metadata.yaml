@@ -1,0 +1,53 @@
+title: '[Re] An independent replication of bootstrap confidence-interval calibration for small samples'
+authors:
+- name: Kyunghan Bae
+  orcid: ''
+  email: qorud001@gmail.com
+  affiliations: 1,*
+affiliations:
+- code: 1
+  name: Independent researcher
+  address: South Korea
+keywords: bootstrap, confidence intervals, small samples, Monte Carlo, Python
+code:
+- url: https://github.com/qorud02/bootstrap-ci-replication
+- doi: ''
+- swh: ''
+data:
+- url: https://github.com/qorud02/bootstrap-ci-replication
+- doi: ''
+replication:
+- cite: 'Hesterberg, T. C. (2015). What Teachers Should Know About the Bootstrap: Resampling in the Undergraduate Statistics Curriculum. The American Statistician, 69(4), 371–386.'
+- bib: hesterberg2015
+- url: https://arxiv.org/pdf/1411.5279v1
+- doi: 10.1080/00031305.2015.1089789
+abstract: "We independently implement seven confidence-interval procedures from Hesterberg's study of resampling inference. All 20 printed numerical cells of Table 5 in the extended manuscript agree with direct calculations at the published precision. A fixed-seed experiment evaluates normal and exponential sample means at n=10,20,40, using 5,000 original samples and 1,999 bootstrap resamples per condition. Conditioning on centered or normalized residuals reduces outer simulation noise. The experiment compares one-sided miss probabilities and their Monte Carlo uncertainty, and a paired experiment checks sensitivity to 9,999 resamples. For exponential data at n=10, bootstrap-t coverage is 0.9407, compared with 0.9001 for Student t. The largest-magnitude finite-B tail-probability change is -0.00081. The replication concerns a prespecified small-sample subset of the original study."
+bibliography: bibliography.bib
+type: Replication
+domain: Statistics
+language: Python
+review:
+- url: ''
+contributors:
+- name: ''
+  orcid: ''
+  role: editor
+- name: ''
+  orcid: ''
+  role: reviewer
+- name: ''
+  orcid: ''
+  role: reviewer
+dates:
+- received: ''
+- accepted: ''
+- published: ''
+article:
+- number: ''
+- doi: ''
+- url: ''
+journal:
+- name: ReScience C
+- issn: 2430-3658
+- volume: ''
+- issue: ''

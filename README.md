@@ -56,3 +56,7 @@ and scripts are linked rather than redistributed.
 Code is MIT licensed; the newly written article and figures are CC BY 4.0.
 The original numerical facts and mathematical formulas retain their proper
 source attribution. This package contains no private or participant data.
+
+## Journal-format article
+
+`article.pdf` and `metadata.yaml` provide the ReScience C submission format. The editable LaTeX source is in `latex/`; `BUILD.md` describes compilation. The ReScience template and bundled fonts retain their upstream licenses in that directory. Original simulation code remains MIT licensed.
